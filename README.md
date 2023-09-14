@@ -16,23 +16,10 @@ Currency Converter is a simple desktop application built with Electron.js that a
 
 ## Installation
 
-1. Clone the repository to your local machine:
-
-   ```bash
-   git clone https://github.com/yourusername/currency-converter-electron.git
-   ```
-2. Navigate to project directory
-   ```bash
-   cd currency-converter-electron
-   ```
-3. Install dependencies
-   ```bash
-   npm install
-   ```
-4. Start the Electron App
-   ```bash
-   electron .
-   ```
+1. Clone the repository or download the ZIP file
+2. Navigate to the project directory in your terminal
+3. Run ```npm install``` to install the necessary dependencies
+4. Start the Electron app with the command ```electron .```
 
 ## Usage
 
