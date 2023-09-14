@@ -4,12 +4,13 @@ const amountInput = document.getElementById("amount");
 const convertBtn = document.getElementById("convertBtn");
 const result = document.getElementById("result");
 
+const API_KEY = "e3adbab877e505fb076adbab";
 let currencyData = null;
 
 const fetchCurrencies = async () => {
   try {
     const response = await fetch(
-      "https://v6.exchangerate-api.com/v6/e3adbab877e505fb076adbab/latest/USD"
+      `https://v6.exchangerate-api.com/v6/${API_KEY}/latest/USD`
     );
     currencyData = await response.json();
     const currencies = Object.keys(currencyData.conversion_rates);
