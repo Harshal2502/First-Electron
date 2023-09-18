@@ -1,6 +1,7 @@
 # Currency Converter Electron App
 
-![Currency Converter Screenshot](screenshot.png)
+
+![electron_app gif](https://github.com/Harshal2502/First-Electron/assets/92778686/5af0fa92-6071-464f-8ddd-042c52fc56d4)
 
 ## Description
 
