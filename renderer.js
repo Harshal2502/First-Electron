@@ -39,17 +39,16 @@ const convertCurrency = () => {
     const amount = parseFloat(amountInput.value);
 
     if (amount) {
-
       const fromRate = currencyData.conversion_rates[fromCurrency.value];
       const toRate = currencyData.conversion_rates[toCurrency.value];
 
       const convertedAmount = (amount / fromRate) * toRate;
-      result.textContent = `${Math.abs(amount)} ${fromCurrency.value} is equals to: ${Math.abs(convertedAmount.toFixed(2))} ${toCurrency.value}`;
-
+      result.textContent = `${Math.abs(amount)} ${fromCurrency.value
+        } is equals to: ${Math.abs(convertedAmount.toFixed(2))} ${toCurrency.value
+        }`;
     } else {
-      result.textContent = "👀 You should enter some amount to convert..";
+      alert("🤓 You should enter some amount to convert..")
     }
-
   } else {
     console.error("Something went wrong :(");
   }
@@ -62,3 +61,19 @@ amountInput.addEventListener("keyup", (event) => {
     convertCurrency();
   }
 });
+
+let childWindow = null;
+
+function openChildWindow(url) {
+
+  if (childWindow && !childWindow.closed) {
+    childWindow.close();
+  } 
+    childWindow = window.open(
+      url,
+      "_blank",
+      "width=400, height=300, resizable=no, frame=no"
+    );
+
+  childWindow.focus();
+}

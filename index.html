@@ -7,7 +7,7 @@
     <title>Currency Converter</title>
 </head>
 
-<body>
+<body style="user-select: none;">
     <h1>Currency Converter</h1>
 
     <label for="fromCurrency">From:</label>
@@ -21,6 +21,7 @@
     <button id="convertBtn">Convert</button>
 
     <h3 id="result"></h3>
+    <button onclick="openChildWindow('childWin.html');" target="_blank" style="border-radius: 10px; margin-top: 13rem; text-decoration: none;">Go to child..</button>
 
     <script src="renderer.js"></script>
 </body>
